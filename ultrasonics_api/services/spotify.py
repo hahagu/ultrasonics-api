@@ -77,7 +77,7 @@ def auth_headers():
 
 
 @bp.route('/auth/request')
-@limiter.limit("2 per day")
+@limiter.limit("5 per minute")
 def api_spotify_auth_request():
     """
     Requests authorisation from the Spotify API.
