@@ -89,7 +89,7 @@ def api_spotify_auth_request():
     params = {
         "client_id": os.environ.get('SPOTIFY_CLIENT_ID'),
         "response_type": "code",
-        "redirect_uri": os.environ.get('SPOTIFY_REDIRECT_URI') + "api/spotify/auth",
+        "redirect_uri": "http://localhost:8003/api/spotify/auth",
         "state": str(uuid4()),
         "scope": " ".join([
             "playlist-modify-public",
