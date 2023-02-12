@@ -41,6 +41,10 @@
             "description": "Client secret for Spotify",
             "required": false
         },
+        "SPOTIFY_REDIRECT_URI": {
+            "description": "Base URI for Spotify Redirect with a trailing slash",
+            "required": false
+        },
         "LASTFM_API_KEY": {
             "description": "API key for Last.fm",
             "required": false
